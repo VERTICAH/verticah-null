@@ -991,6 +991,19 @@ ol.commentlist li.thread-odd {}
 .logo-home a:link {color: #fff;}
 .logo-home a:visited {color: #fff;}
 
+.logo {
+	display: inline-block;
+	margin: 6px 0 0 0;
+	padding: 6px 15px 7px 15px;
+	cursor: pointer;
+
+	-webkit-transition: all 0.15s ease-in;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+	-ms-transition: all 0.15s ease-in;
+	transition: all 0.15s ease-in;
+}
+
 /* Navigation */
 
 .nav-home {
