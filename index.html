@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+
+<title>Reactor</title>
+
+<!-- meta -->
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="robots" content="noindex,follow">
+<meta name="keywords" content=" ">
+
+<!-- css -->
+<!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald:300,400">
+<![endif]-->
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/reactor-red.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/jquery.vegas.css" type="text/css"/>
+<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:400' type="text/css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+</head>
+<body>
+<div id="preloader">
+	<div id="status">&nbsp;</div>
+</div>
+
+<div id="header-home">
+	<div id="header-home-inner">
+	<div id="logo-home">
+		<h1 class="logo-home"><a href="index.html" rel="home">Reactor</a></h1>
+	</div>
+
+	<input type="checkbox" id="toggle">
+	<label for="toggle" class="toggle-home" onclick><i class="fa fa-bars"></i></label>
+	<div class="nav-home">
+			<ul class="menu">
+				<li class="current-menu-item"><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="info.html">Info</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+		</div><!-- end navigation -->
+		<div class="clear"></div>
+	</div>
+</div><!-- end header-home -->
+
+<div id="content-home">
+	<div class="text-home"><p>We are</p></div>
+	<div id="ticker">
+	  <ul>
+		<li>Design Studio</li>
+		<li>Creative</li>
+		<li>Efficient</li>
+		<li>Reactor</li>
+	  </ul>
+	</div>
+	<div class="home-dash"></div>
+	<div class="button-center"><a class="button-home" href="services.html">Get started</a></div>
+</div><!-- end content-home -->
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="js/jquery.preloader.js"></script>
+<script src="js/jquery.vegas.min.js"></script>
+<script src="js/jquery.vticker.js"></script>
+
+<script>
+$(function() {
+$.vegas('slideshow', {
+  backgrounds:[
+    { src:'images/dummy-images/slide1.jpg', fade:1000, },
+    { src:'images/dummy-images/slide2.jpg', fade:1000, },
+  ]
+})('overlay');
+  $.vegas('overlay', {
+	opacity:0.7,
+    src:'images/overlays/01.png'
+  });
+});
+</script>
+
+<script>
+$(function() {
+  $('#ticker').vTicker();
+});
+</script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</body>
+</html>
